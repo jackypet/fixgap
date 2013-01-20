@@ -2,4 +2,7 @@
 import sys
 import re
 
-def main():
+def main(file):
+    for line in open(file):
+        line = line.rstrip()
+        print line
